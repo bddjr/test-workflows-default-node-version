@@ -4,7 +4,12 @@ on:
   workflow_dispatch:
 
 jobs:
-  test:
+  ubuntu:
     runs-on: ubuntu-latest
+    steps:
+      - run: node -v
+
+  windows:
+    runs-on: windows-latest
     steps:
       - run: node -v
